@@ -10,7 +10,7 @@ public class matlibs{
 
         String madlib;
         while (true) {
-            System.out.println("Which madlib you want?(one-two-three)");
+            System.out.println("Which madlib you want?(one-five)");
             String matlibNum= scanner.nextLine();
             if (matlibNum.compareTo("one")==0) {
             madlib="I went to the animal <noun>, the <plural_noun> and the <number> beasts were there." ;
@@ -25,14 +25,23 @@ public class matlibs{
                 madlib="The <adjective> <animal> decided to <verb> all day, but <different adjective> <different animal> <different verb> it.";
                 break;
             }
+            if (matlibNum.compareTo("four")==0){
+                madlib="I was <adjective> in the morning, but my mom <verb> me";
+                break;
+            }
+            if (matlibNum.compareTo("five")==0){
+                madlib="An <adjective> <noun> <verb>.";
+                break;
+            }
             else{
-                System.out.println("Please input one, two, or three, all lowercase.(Has to be words!)");
+                System.out.println("Please input the number in words all lowercase.(Has to be words!, etc. 1->one)");
             }
         }
         while (madlib.indexOf("<")!=-1) {
         //https://www.w3schools.com/java/java_operators.asp
         String BSB=madlib.substring(madlib.indexOf("<"),madlib.indexOf(">")+1);
-        System.out.println("Please give me a "+BSB);
+
+        System.out.println("Please give me a "+BSB.substring( 1, BSB.length() - 1 ));
         String word= scanner.nextLine();
         madlib=madlib.replace(BSB,word);
 }
