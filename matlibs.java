@@ -24,8 +24,8 @@ public class matlibs{
             if (matlibNum.compareTo("three")==0) {
                 madlib="The <adjective> <animal> decided to <verb> all day, but <different adjective> <different animal> <different verb> it.";
                 break;
-            }
-            if (matlibNum.compareTo("four")==0){
+                }
+                if (matlibNum.compareTo("four")==0){
                 madlib="I was <adjective> in the morning, but my mom <verb> me";
                 break;
             }
@@ -39,12 +39,12 @@ public class matlibs{
         }
         while (madlib.indexOf("<")!=-1) {
         //https://www.w3schools.com/java/java_operators.asp
-        String BSB=madlib.substring(madlib.indexOf("<"),madlib.indexOf(">")+1);
+        String betweenAngleBrackets=madlib.substring(madlib.indexOf("<"),madlib.indexOf(">")+1);
 
-        System.out.println("Please give me a "+BSB.substring( 1, BSB.length() - 1 ));
+        System.out.println("Please give me a "+betweenAngleBrackets.substring( 1, betweenAngleBrackets.length() - 1 ));
         String word= scanner.nextLine();
-        madlib=madlib.replace(BSB,word);
-}
+        madlib=madlib.replace(betweenAngleBrackets,word);
+        }
         System.out.println(madlib);
         // this is method one that what probably ap grader would want
         // String BSB1=madlib.substring(madlib.indexOf("<"),madlib.indexOf(">")+1);
