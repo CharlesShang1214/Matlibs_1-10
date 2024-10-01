@@ -1,0 +1,15 @@
+Initial Design note:
+I wanna make users could choose their own madlibs between one and three
+The code could automaticly choose the name inside the arrow brackets(dont think thats how you call it)
+Make a loop instead of doing it multiple time
+asked the player wanna play again or note
+
+milestone chart(i did the milestone chart after i finished the madlib so there is no estimate time):
+Rough draft : sep.26
+Better users interactivity: sep.27
+Get idea of how to do the loop & finish: sep.30
+More madlib&better println statements(final draft): oct.1
+
+Brief description & intended purpose:
+This is a madlib programm let you do madlibs! There is five choices of madlibs with different amount of words. 
+Its intended puprose is to create a more users interactivity madlib program
