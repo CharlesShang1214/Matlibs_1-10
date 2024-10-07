@@ -30,7 +30,7 @@ public class matlibs{
                 break;
             }
             if (matlibNum.compareTo("five")==0){
-                madlib="An <adjective> <noun> <verb>.";
+                madlib="A <adjective> <noun> <verb>.";
                 break;
             }
             else{
@@ -44,6 +44,10 @@ public class matlibs{
         System.out.println("Please give me a "+betweenAngleBrackets.substring( 1, betweenAngleBrackets.length() - 1 ));
         String word= scanner.nextLine();
         madlib=madlib.replace(betweenAngleBrackets,word);
+        // other method  not using replace
+        // String firstPart= madlib.substring(0, madlib.indexOf("<"));
+        // String last part madlib.substring(madlib.indexOf(">")+1, madlib.length()-1);
+        // madlib= firstPart+userInput+lastPart;
         }
         System.out.println(madlib);
         // this is method one that what probably ap grader would want
@@ -72,7 +76,4 @@ public class matlibs{
         }
         else{
             System.out.println("Sure, lets do it again");
-        }
-
-        }
-    }}
+        }}}}
